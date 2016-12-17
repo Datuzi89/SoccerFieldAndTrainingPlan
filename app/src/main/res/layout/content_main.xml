@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/content_main"
+    android:background="#050505"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.example.xuezhu.soccerfieldandtrainingplan.MainActivity"
+    tools:showIn="@layout/activity_main">
+
+    <TextView
+        android:id="@+id/titleText"
+        android:text="@string/title_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="34dp"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        android:textColor="@color/colorAccent"
+         />
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_below="@id/titleText"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/soccer_ss"
+        />
+
+    <LinearLayout
+        android:id="@+id/layout"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:layout_centerHorizontal="true"
+        android:background="@color/bg"
+        android:layout_width="400dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/logo">
+
+        <EditText
+            android:id="@+id/fieldNameText"
+            android:padding="14dp"
+            android:layout_marginTop="18dp"
+            android:hint="@string/hint_name"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content" />
+
+        <EditText
+            android:id="@+id/fieldAddrText"
+            android:padding="14dp"
+            android:hint="@string/hint_addr"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content" />
+
+        <EditText
+            android:id="@+id/fieldTelText"
+            android:padding="15dp"
+            android:hint="@string/hint_tel"
+            android:inputType="phone"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content" />
+
+        <EditText
+            android:id="@+id/fieldTypeText"
+            android:padding="15dp"
+            android:hint="@string/hint_type"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content" />
+
+
+        <Button
+            android:id="@+id/submitButton"
+            android:text="@string/submit_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+</RelativeLayout>
